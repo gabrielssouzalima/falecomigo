@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Display:wght@300..800&display=swap');
+
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Variáveis globais */
+:root {
+  --font-family: 'Funnel Display', sans-serif;
+  --color-text-light: #ffffff;
+  --color-background-light: #fff;
+  --color-header-bg: #FFD1DC;
+  --color-nav-bg: #ff5b8a;
+  --color-accent: #5b1f30;
+}
+
+/* Corpo do site */
+body {
+  font-family: var(--font-family);
+  color: var(--color-text-light);
+  background-color: var(--color-background-light);
+}
+
+/* Conteúdo principal */
+main {
+  flex: 1;
+}
+
+/* Cabeçalho */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--color-header-bg);
+  min-height: 10vh;
+  padding: 1rem 2rem;
+}
+
+/* Logo */
+.logo-header {
+  max-width: 80px;
+  margin-right: 25px;
+}
+
+/* Navegação */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-nav-bg);
+  border-radius: 5px;
+  min-width: 30%;
+  max-width: 100%;
+  min-height: 5vh;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+nav li a {
+  display: block;
+  text-decoration: none;
+  color: var(--color-text-light);
+  font-size: 1.2rem;
+  text-align: center;
+  transition: color 0.3s ease;
+}
+
+/* Seção de início */
+#secao-inicio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background-image: linear-gradient(to right, #c32753, #f06292);
+  padding: 2rem;
+  min-height: 20vh;
+}
+
+/* Imagem decorativa */
+.emoji-imagem {
+  width: 450px;
+  max-width: 100%;
+  border-radius: 12px;
+  animation: flutuar 1.5s ease-in-out infinite;
+}
+
+/* Container da frase e botão */
+.container-frase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+  background-color: var(--color-accent);
+  padding: 1.5rem;
+  border-radius: 12px;
+  text-align: center;
+  color: var(--color-text-light);
+  animation: flutuar 4s ease-in-out infinite;
+}
+
+#fraseAmorosa {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Botão */
+.botao-frase {
+  width: 100%;
+  max-width: 250px;
+  height: 50px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--color-text-light);
+  color: #c32753;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.botao-frase:hover {
+  transform: scale(1.05);
+}
+
+/* Seção Assista */
+#secao-assista {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #ac3557, #f06292);
+  height: 45vh;
+}
+
+.texto-h3 {
+  padding-bottom: 1.5rem;
+  font-size: 1.5rem;
+}
+
+/* Seção Playlist */
+#secao-playlist {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to bottom, #970e3c, #811a3c);
+  height: 45vh;
+}
+
+.playlist-spotify {
+  width: 75%;
+  height: 25vh;
+}
+
+/* Seção Contato */
+#secao-contato {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, #d74274, #f70958);
+  min-height: 25vh;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.container-textos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.texto-h3-primeiro,
+.texto-h3-segundo {
+  margin: 0;
+  padding: 0;
+  line-height: 1.2;
+}
+
+.texto-h3-segundo {
+  margin-top: 2px;
+}
+
+.container-contato {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1.5rem;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.imagem-contato {
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+  animation: flutuar 1.0s ease-in-out infinite;
+}
+
+.textos-contato {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.textos-contato h2 {
+  margin: 0;
+  line-height: 1.2;
+  color: var(--color-text-light);
+  animation: flutuar 1.5s ease-in-out infinite;
+  font-size: 1.2rem;
+  text-align: left;
+}
+footer{
+    background-color: #c32753;
+    min-height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/* Animação */
+@keyframes flutuar {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* Interações */
+nav li a:hover {
+  color: var(--color-accent);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  nav {
+    width: 40%;
+    padding: 1rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    width: 100%;
+  }
+
+  nav li {
+    width: 100%;
+    text-align: center;
+  }
+
+  nav li a {
+    font-size: 1rem;
+  }
+
+  .container-contato {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .imagem-contato {
+    width: 200px;
+  }
+
+  .textos-contato h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+}

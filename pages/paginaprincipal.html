@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="/assets/css/paginaPrincipal.css">
+    <link rel="icon" href="/images/logos/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="/images/logoPrincipal.png" alt="Logo do Site" class="logo-header">
+        <nav aria-label="Navegação Principal">
+            <ul>
+                <li><a href="#secao-inicio">Início</a></li>
+                <li><a href="#secao-assista">Assista</a></li>
+                <li><a href="#secao-playlist">Playlist</a></li>
+                <li><a href="#secao-contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="secao-inicio">
+            <img src="/images/emoji-meme.png" alt="Emoji da Seção Início" class="emoji-imagem">
+            <div class="container-frase">
+                <p id="fraseAmorosa"></p>
+                <button onclick="mostrarFrase()" class="botao-frase">
+                    Clique para receber uma mensagem
+                </button>
+            </div>
+        </section>
+
+        <section id="secao-assista">
+            <h3 class="texto-h3">Assista um pouco enquanto decide se conversa comigo! 🤫</h3>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/COJE8fr7WjE?si=QEQLgHhRAfv4cKxa"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="secao-playlist">
+            <h3 class="texto-h3">Olhe só essa playlist! Nem um pouco tendenciosa 😏</h3>
+            <iframe data-testid="embed-iframe" style="border-radius:12px"
+                src="https://open.spotify.com/embed/playlist/1BteQVFQjO5EzkulyT12U0?utm_source=generator"
+                class="playlist-spotify" frameBorder="0" allowfullscreen=""
+                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                loading="lazy"></iframe>
+        </section>
+        <section id="secao-contato">
+            <div class="container-textos">
+              <h3 class="texto-h3-primeiro">Acho que você perdeu meu @ no Instagram 😅</h3>
+              <h3 class="texto-h3-segundo">Sem problema! Eu te passo de novo!</h3>
+            </div>
+          
+            <div class="container-contato">
+              <img src="/images/emoji-meme2.png" alt="Emoji da Seção Contato" class="imagem-contato">
+              
+              <div class="textos-contato">
+                <h2>Instagram: @ktroughtwelve</h2>
+                <h2>Instagram 2: @vh.gabriellsouza</h2>
+              </div>
+            </div>
+        </section>
+        </section>
+    </main>
+<footer>
+    <h2>Agora que voce viu tudo, conversa comigo! 😣</h2>
+</footer>
+    <script src="/assets/js/paginaprincipal.js"></script>
+</body>
+
+</html>
